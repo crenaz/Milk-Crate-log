@@ -1,0 +1,24 @@
+{
+  "name": "Milk-Crate-Log",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This is a medicine tracking Log for my cat Milk-Crate, who has Chronic kidney disease (CKD)",
+  "keywords": [
+    "astrojs"
+  ],
+  "license": "MIT",
+  "author": "crenaz",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.17.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-markdown": "^10.1.0"
+  }
+}
