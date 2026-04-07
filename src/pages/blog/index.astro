@@ -1,10 +1,7 @@
 ---
-import { getCollection } from 'astro:content';
+import { getAllPosts } from '@/utils/posts';
 
-const posts = await getCollection('blog');
-
-// Optional: sort by date
-posts.sort((a, b) => b.data.pubDate - a.data.pubDate);
+const posts = await getAllPosts();
 ---
 
 <h1>Blog</h1>
@@ -12,7 +9,7 @@ posts.sort((a, b) => b.data.pubDate - a.data.pubDate);
 <ul>
   {posts.map(post => (
     <li>
-      <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+      <a href={`/blog/${post.id}`}>{post.data.title}</a>
     </li>
   ))}
 </ul>
