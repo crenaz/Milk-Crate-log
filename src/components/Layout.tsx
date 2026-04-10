@@ -23,7 +23,7 @@ export default function Layout({ children, activeTab, onTabChange, onAddClick }:
               referrerPolicy="no-referrer"
             />
           </div>
-          <h1 className="font-headline font-bold text-2xl text-deep-plum tracking-tight">FelineCare</h1>
+          <h1 className="font-headline font-bold text-2xl text-deep-plum tracking-tight">Milky's Care</h1>
         </div>
         <button 
           onClick={onAddClick}

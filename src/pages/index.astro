@@ -1,12 +1,12 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Milky from '../components/Milky.astro';
-import Layout from '../layouts/BaseLayout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from '../layouts/Layout.astro';
+import App from '../App.tsx';
 ---
 
-<Layout>
-	<Milky />
+<Layout title="Milky'sCare Tracker">
+	<App client:load>
+		<p slot="fallback" class="px-6 py-8 text-center text-secondary">
+			Loading Milky&apos;s Care…
+		</p>
+	</App>
 </Layout>

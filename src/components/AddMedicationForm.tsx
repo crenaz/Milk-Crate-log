@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Plus, X, CheckCircle2, Info, Clock } from 'lucide-react';
-import { MedicationType } from '../types';
+import type { MedicationType } from '../types';
 import { useStore } from '../store';
 import { cn } from '../lib/utils';
 
@@ -28,7 +28,7 @@ export default function AddMedicationForm({ onClose }: AddMedicationFormProps) {
 
   const handleAddTime = () => {
     if (newTime && !schedule.includes(newTime)) {
-      setSchedule([...schedule].sort());
+      setSchedule([...schedule, newTime].sort());
       setNewTime('');
     }
   };

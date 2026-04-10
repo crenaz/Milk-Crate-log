@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform } from 'motion/react';
 import { Check, X, CheckCircle2 } from 'lucide-react';
-import { Medication, DoseStatus } from '../types';
+import type { Medication, DoseStatus } from '../types';
 import { cn } from '../lib/utils';
 import { useStore } from '../store';
 

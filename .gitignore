@@ -22,3 +22,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# coverage and editor files
+coverage/
+.vscode/
+.cursor/
+!.env.example

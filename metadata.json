@@ -1,0 +1,5 @@
+{
+  "name": "Milk-Crate Care Tracker",
+  "description": "A clean, minimal, mobile-first PWA designed to help me track, manage, and confirm Milk-Crate's medication schedules.",
+  "requestFramePermissions": []
+}

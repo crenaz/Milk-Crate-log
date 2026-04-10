@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Manrope", sans-serif;
+  
+  --color-deep-plum: #32172a;
+  --color-muted-rose: #894b64;
+  --color-dusty-mauve: #261a3c;
+  --color-soft-lavender: #ede6f0;
+  --color-cool-violet: #bb93ab;
+  --color-pale-lilac: #fef7ff;
+  
+  --color-surface: #fef7ff;
+  --color-surface-low: #f9f1fb;
+  --color-surface-high: #ede6f0;
+  --color-surface-highest: #e8e0ea;
+  
+  --color-primary: #32172a;
+  --color-secondary: #894b64;
+  --color-accent: #bb93ab;
+  
+  --radius-xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-deep-plum font-sans;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
